@@ -1,38 +1,281 @@
-.App {
-  text-align: center;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* ------------------------- Header ----------------------------> */
+  header {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    padding: .2em 3em;
   }
-  to {
-    transform: rotate(360deg);
+  .logo {
+    width: 21em;
   }
-}
+  .logo:hover {
+    cursor: pointer;
+  }
+  .callIcon {
+    font-size: 1.8em;
+  }
+
+  /* ------------------------- Navbar ----------------------------> */
+  nav {
+    border-bottom: 3px solid rgb(120, 26, 26);
+    display: flex;
+    justify-content: center;
+    background: rgb(181, 39, 39);
+    margin-top: .6em;
+    flex-wrap: wrap;
+  }
+  nav a {
+    text-decoration: none;
+    border-right: 1px solid rgb(131, 31, 31);
+    padding: .7em 1.5em;
+    color: white;
+    font-weight: 700;
+  }
+  nav a:hover {
+    background: #ffffff;
+    color: rgb(181, 39, 39);
+  }
+
+  /*------------ Register-Login Page ------------*/
+  .registerPage,
+  .loginPage {
+    border-radius: 10px;
+    width: 40vw;
+    height: 22em;
+    margin: 3em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: roboto;
+    background: rgba(255, 255, 255, 0.671);
+    backdrop-filter: blur(3px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    padding-bottom: .5em;
+  }
+  .registerPage input,
+  .loginPage input {
+    height: 2em;
+    padding-left: 1em;
+  }
+  .registerPage p,
+  .loginPage p {
+    font-weight: 600;
+    color: orangered;
+  }
+  .registerPage p:hover,
+  .loginPage p:hover {
+    scale: 1.1;
+    transition: 500ms;
+  }
+  .btnRegister,
+  .btnLogin {
+    width: 8em;
+    height: 2.3em;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    background: rgb(255, 193, 78);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  /* ------------------------- Home page ----------------------------> */
+  h1,h2{
+    text-align: center;
+  }
+
+  .homeTourHead,.homeTourPackages,.homeHolidayDestination,.styleTourPackages,.tourPackages {
+    width: 90%;
+    margin: 3em auto;
+  }
+  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.tourPackages p {
+    margin: 0 0 10px;
+    text-align: justify;
+    font-size: 15px;
+    padding: 5px;
+    line-height: 1.7;
+  }
+  .homeTourHead b, .tourPackages b {
+    color: rgb(189, 9, 9);
+  }
+
+  .idealTourPackage,.sectionTourpackages {
+    /* border: 1px solid; */
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  .tourPackage:hover {
+    cursor: pointer;
+  }
+  .tourPackage img,.sectionTourTypes img{
+    width: 16em;
+    object-fit: contain;
+  }
+  .tourPackage,.sectionTourTypes {
+    /* border: 1px solid red; */
+    padding: .2em;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  .tourPackage p,.destinations p,.sectionTourTypes p {
+    /* border: 1px solid red; */
+    padding: .5em 0;
+    text-align: center;
+  }
+
+  .holidayDestinations{
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .5em;
+  }
+  .destinations{   
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: .2em;
+  }
+  .destinations img{
+    width: 11em;
+  }
+  .destinations h4{
+    border-bottom: 1px dashed grey;
+    padding: .5em 0;
+  }
+
+
+
+
+
+
+
+  /* Ideal Tour Packages: Dynamic Page ----------------------------> */
+  .tourPlace,.tourOptions {
+    /* border: 1px solid red; */
+    margin: 3em;
+  }
+  .tourOptions {
+    /* border: 1px solid green; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  .tourOptions img {
+    width: 16.7em;
+  }
+  .tourOptions p {
+    padding: 1em 0;
+    text-align: center;
+  }
+  .tourCategory {
+    padding: .2em;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ------------------------- Footer ----------------------------> */
+  footer {
+    margin: 1em 0;
+  }
+  .links {
+    background: rgba(0, 0, 0, 0.847);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: .1em 1em;
+  }
+  .links a {
+    border-right: 1px solid white;
+    text-decoration: none;
+    color: white;
+    padding: 0 1em;
+    margin: .6em 0;
+    font-weight: 600;
+  }
+  .links a:hover {
+    color: rgb(255, 142, 142);
+  }
+  section {
+    margin: 0 2.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .section_a {
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+  .section_a h1 {
+    color: rgb(207, 0, 0);
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: flex-end;
+  }
+  .mail {
+    color: black;
+  }
+  .fb,
+  .yt,
+  .twitter {
+    color: black;
+    margin-right: 5px;
+  }
+  .fb,
+  .twitter {
+    color: rgb(52, 96, 255);
+  }
+  .yt {
+    color: red;
+  }
+  .section_b {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    font-weight: 500;
+    object-fit: contain;
+  }
+  .section_b img {
+    width: 100%;
+  }
