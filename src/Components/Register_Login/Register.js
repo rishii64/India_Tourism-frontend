@@ -47,25 +47,27 @@ export default function Register() {
   }, [navigate])
 
   return (
-    <div className='registerPage'>
-      {/* <ToastContainer /> */}
-      <section>
-        <h1>Looks like you're new here!</h1>
-      </section>
-      <span>
-        <label>Name: </label>
-        <input type='text' placeholder='enter name' value={name} onChange={(e) => setName(e.target.value)} /> <br /><br />
-      </span>
-      <span>
-        <label>E-mail: </label>
-        <input type='text' placeholder='enter e-mail' value={email} onChange={(e) => setEmail(e.target.value)} />  <br /><br />
-      </span>
-      <span>
-        <label>Password: </label>
-        <input type='password' placeholder='enter password' value={password} onChange={(e) => setPassword(e.target.value)} />  <br />
-      </span>
-      <button className='btnRegister' onClick={handleRegister}>Register</button>
-      <p onClick={() => navigate('/user/login')}>Existing User? Login</p>
+    <div className='register-Login'>
+      <div className='registerPage'>
+        {/* <ToastContainer /> */}
+        <section>
+          <h1>Looks like you're new here!</h1>
+        </section>
+        <span>
+          <label>Name: </label>
+          <input type='text' placeholder='enter name' value={name} onChange={(e) => setName(e.target.value)} /> <br /><br />
+        </span>
+        <span>
+          <label>E-mail: </label>
+          <input type='text' placeholder='enter e-mail' value={email} onChange={(e) => setEmail(e.target.value)} />  <br /><br />
+        </span>
+        <span>
+          <label>Password: </label>
+          <input type='password' placeholder='enter password' value={password} onChange={(e) => setPassword(e.target.value)} />  <br />
+        </span>
+        <button className='btnRegister' onClick={handleRegister}>Register</button>
+        <p onClick={() => navigate('/user/login')}>Existing User? Login</p>
+      </div>
     </div>
   )
 }

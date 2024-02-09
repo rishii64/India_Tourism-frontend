@@ -63,21 +63,23 @@ export default function Login() {
   }
 
   return (
-    <div className='loginPage'>
-      {/* <ToastContainer /> */}
-      <section>
-        <h1>Login Page</h1>
-      </section>
-      <span>
-        <label>E-mail: </label>
-        <input type='text' placeholder='enter e-mail' value={email} onChange={(e) => setEmail(e.target.value)} />  <br /><br />
-      </span>
-      <span>
-        <label>Password: </label>
-        <input type='password' placeholder='enter password' value={password} onChange={(e) => setPassword(e.target.value)} />  <br /><br />
-      </span>
-      <button className='btnLogin' onClick={handleLogin}>Login</button>
-      <p onClick={() => navigate('/user/register')}>New Here? Create an account</p>
+    <div className='register-Login'>
+      <div className='loginPage'>
+        {/* <ToastContainer /> */}
+        <section>
+          <h1>Login Page</h1>
+        </section>
+        <span>
+          <label>E-mail: </label>
+          <input type='text' placeholder='enter e-mail' value={email} onChange={(e) => setEmail(e.target.value)} />  <br /><br />
+        </span>
+        <span>
+          <label>Password: </label>
+          <input type='password' placeholder='enter password' value={password} onChange={(e) => setPassword(e.target.value)} />  <br /><br />
+        </span>
+        <button className='btnLogin' onClick={handleLogin}>Login</button>
+        <p onClick={() => navigate('/user/register')}>New Here? Create an account</p>
+      </div>
     </div>
   )
 }
