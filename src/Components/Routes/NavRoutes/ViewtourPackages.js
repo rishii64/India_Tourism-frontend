@@ -26,7 +26,6 @@ export default function ViewtourPackages() {
                         <div className='tourPlace'  key={index}>
                             <h1>{item.title}</h1> <hr/><br/>
                             <p>{item.desc}</p>
-
                         </div>
                     )
                 })

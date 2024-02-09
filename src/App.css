@@ -9,7 +9,6 @@
 
   /* ------------------------- Header ----------------------------> */
   header {
-    /* border: 2px solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,8 +47,7 @@
   }
 
   /*------------ Register-Login Page ------------*/
-  .registerPage,
-  .loginPage {
+  .registerPage,.loginPage {
     border-radius: 10px;
     width: 40vw;
     height: 22em;
@@ -64,23 +62,19 @@
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding-bottom: .5em;
   }
-  .registerPage input,
-  .loginPage input {
+  .registerPage input,.loginPage input {
     height: 2em;
     padding-left: 1em;
   }
-  .registerPage p,
-  .loginPage p {
+  .registerPage p,.loginPage p {
     font-weight: 600;
     color: orangered;
   }
-  .registerPage p:hover,
-  .loginPage p:hover {
+  .registerPage p:hover,.loginPage p:hover {
     scale: 1.1;
     transition: 500ms;
   }
-  .btnRegister,
-  .btnLogin {
+  .btnRegister,.btnLogin {
     width: 8em;
     height: 2.3em;
     border: none;
@@ -90,7 +84,7 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
-  /* ------------------------- Home page ----------------------------> */
+  /* ------------------------- Home Route ----------------------------> */
   h1,h2{
     text-align: center;
   }
@@ -99,7 +93,7 @@
     width: 90%;
     margin: 3em auto;
   }
-  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.tourPackages p {
+  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.styleTourPackages p,.tourPackages p,.tourPlace p {
     margin: 0 0 10px;
     text-align: justify;
     font-size: 15px;
@@ -111,40 +105,36 @@
   }
 
   .idealTourPackage,.sectionTourpackages {
-    /* border: 1px solid; */
     margin: 2em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
   }
-  .tourPackage:hover {
+  .tourPackage:hover,.sectionTourTypes:hover {
     cursor: pointer;
   }
-  .tourPackage img,.sectionTourTypes img{
+  .tourPackage img,.sectionTourTypes img,.packageItems img{
     width: 16em;
     object-fit: contain;
   }
   .tourPackage,.sectionTourTypes {
-    /* border: 1px solid red; */
     padding: .2em;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
-  .tourPackage p,.destinations p,.sectionTourTypes p {
-    /* border: 1px solid red; */
+  .tourPackage p,.destinations p,.sectionTourTypes p,.styleTourPackageOptions p,.packageItems p {
     padding: .5em 0;
     text-align: center;
   }
 
   .holidayDestinations{
-    /* border: 1px solid; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: .5em;
+    gap: .6em;
   }
-  .destinations{   
+  .destinations,.packageItems{   
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: .2em;
@@ -152,24 +142,16 @@
   .destinations img{
     width: 11em;
   }
-  .destinations h4{
+  .destinations h4,.styleTourPackageOptions h4{
     border-bottom: 1px dashed grey;
     padding: .5em 0;
   }
 
-
-
-
-
-
-
   /* Ideal Tour Packages: Dynamic Page ----------------------------> */
   .tourPlace,.tourOptions {
-    /* border: 1px solid red; */
     margin: 3em;
   }
-  .tourOptions {
-    /* border: 1px solid green; */
+  .tourOptions{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -187,15 +169,28 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
 
- 
+  /* ------------------------- India-Tourism Route ----------------------------> */
 
 
-
-
-
-
-
-
+  /* ------------------------- Tour-Packages Route ----------------------------> */
+  .indiaTourismImg,.tourPackagesImg,.styleTourImg{ 
+    width: 100%;
+  }
+  .styleTourPackageCategory,.packagesThemes{
+    margin: 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  .styleTourPackageOptions img{
+    width: 17em;
+  }
+  .styleTourPackageOptions{
+    padding: .2em;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
 
 
 
@@ -262,9 +257,9 @@
     color: black;
     margin-right: 5px;
   }
-  .fb,
+  .fb{  color: rgb(42, 95, 255);}
   .twitter {
-    color: rgb(52, 96, 255);
+    color: rgb(52, 197, 255);
   }
   .yt {
     color: red;

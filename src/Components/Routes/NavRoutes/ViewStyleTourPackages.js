@@ -5,6 +5,7 @@ import axios from 'axios'
 export default function ViewStyleTourPackages() {
     const [place, setPlace] = useState([])
     const path = useParams().styles
+
     useEffect(() => {
         try {
             axios.get(`http://localhost:4343/style-tour-packages/${path}`)
@@ -16,20 +17,28 @@ export default function ViewStyleTourPackages() {
             console.error('Error:', err)
         }
     }, [path])
-
+    // console.log(place);
     return (
-        <div>
-            {
-                place.map((item, index) => {
-                    return (
-                        <div className='tourPlace' key={index}>
-                            <h1>{item.title}</h1> <hr /><br />
-                            <p>{item.desc}</p>
-
-                        </div>
-                    )
-                })
-            }
-        </div>
+        <>
+            <img className='styleTourImg' src={place.poster} alt='' />
+            <div className='tourPlace'>
+                <h1>{place?.title}</h1> <hr /><br />
+                <p>{place?.desc}</p>
+                
+                <div className="styleTourPackageCategory">
+                    {
+                        place.relatedPlace?.map((item, index) => {
+                            return (
+                                <div className='styleTourPackageOptions' key={index}>
+                                    <img src={item.placeImage} alt='' />
+                                    <h4>{item.placeName}</h4>
+                                    <p>{item.duration}</p>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        </>
     )
 }

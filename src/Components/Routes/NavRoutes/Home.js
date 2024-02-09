@@ -24,9 +24,7 @@ export default function Home() {
       console.error('Error:', err)
     }
   }, [path]);
-  // console.log(data2);
-  // console.log(data[0]?.title);
-  // console.log(data[0].relatedPlace[0].placeName);
+
   return (
     <>
       <ImageSlider />
@@ -109,7 +107,7 @@ export default function Home() {
           {
             data2.map((item, index) => {
               return (
-                <div className='sectionTourTypes' key={index}>
+                <div className='sectionTourTypes' onClick={() => navigate(`/style-tour-packages/${item.title}`)} key={index}>
                   <img src={item.thumbnail} alt='' />
                   <p>{item.title}</p>
                 </div>
@@ -118,7 +116,6 @@ export default function Home() {
           }
         </div>
       </div>
-
     </>
   )
 }
