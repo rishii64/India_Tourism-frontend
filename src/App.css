@@ -9,11 +9,14 @@
 
   /* ------------------------- Header ----------------------------> */
   header {
+    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1em;
     padding: .2em 3em;
+    /* position: sticky;
+    top: 10vh; */
   }
   .logo {
     width: 21em;
@@ -24,6 +27,16 @@
   .callIcon {
     font-size: 1.8em;
   }
+
+  .btnProfile{
+    width: 2em;
+    height: 1.5em;
+    border: 1px solid grey;
+    border-radius: 15%;
+    font-size: 1.2em;
+    margin-left: 4em;
+  }
+  .btnProfile:hover{cursor: pointer;}
 
   /* ------------------------- Navbar ----------------------------> */
   nav {
@@ -48,16 +61,16 @@
 
   /*------------ Register-Login Page ------------*/
   .register-Login{
-    border: 1px solid rgb(0, 0, 0);
-    height: 85vh;
-    background: url('https://img.freepik.com/premium-photo/vr-interface-laptop-secure-access-user-s-personal-information-sign-register_556176-943.jpg?size=626&ext=jpg&ga=GA1.1.390521900.1707301617&semt=ais') no-repeat;
+    border: 1px solid rgb(255, 255, 255);
+    height: 30em;
+    background: url('https://img.freepik.com/free-photo/travel-navigation-journey-vacation-trip-telephone-concept_53876-127696.jpg?size=626&ext=jpg&ga=GA1.1.390521900.1707301617&semt=ais') no-repeat;
     background-size: cover;
     background-position: center;
   }
-  .registerPage,.loginPage {
+  .loginPage {
     border-radius: 10px;
-    width: 40vw;
-    height: 25em;
+    width: 45vw;
+    /* height: 24em; */
     margin: 3em auto;
     display: flex;
     flex-direction: column;
@@ -67,19 +80,21 @@
     background: rgba(255, 255, 255, 0.671);
     backdrop-filter: blur(5px);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    padding-bottom: .5em;
+    padding: 3em;
+    gap: 1em;
   }
-  .registerPage input,.loginPage input {
+  .loginPage input {
     height: 2em;
     padding-left: 1em;
   }
-  .registerPage p,.loginPage p {
+  .loginPage p {
     font-weight: 600;
     color: orangered;
   }
-  .registerPage p:hover,.loginPage p:hover {
+  .loginPage p:hover {
     scale: 1.1;
     transition: 500ms;
+    cursor: pointer;
   }
   .btnRegister,.btnLogin {
     width: 8em;
@@ -89,6 +104,52 @@
     font-weight: 600;
     background: rgb(255, 193, 78);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+
+  .signUp{
+    background: rgba(255, 255, 255, 0.951);
+    border-radius: 10px;
+    width: 45%;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .4em;
+    padding: 2.5em;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
+  .signUp p:hover{
+    scale: 1.1;
+    transition: 500ms;
+    cursor: pointer;
+  }
+  .form-item {
+    position: relative;
+  }
+  input:focus{ outline: none;}
+  .form-item input {
+      width: 25vw;
+      height: 35px;
+      margin: auto;
+      padding: 0px 20px;
+      border-radius: 5px;
+      border: none;
+      border-bottom: 1px solid grey;
+      background: rgba(255, 255, 255, 0.911);
+  }
+  .form-item label {
+      position: absolute;
+      top: 8px;
+      padding: 1px 10px;
+      margin-left: 10px;
+      pointer-events: none;
+      background: rgba(255, 255, 255, 0.94);
+      transition: .3s;
+  }
+  .form-item input:valid~label,.form-item input:focus~label {
+      color: blue;
+      transform: translateY(-17px);
+      font-size: 13px;
   }
 
   /* ------------------------- Home Route ----------------------------> */

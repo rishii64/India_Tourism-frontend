@@ -46,10 +46,15 @@ export default function Register() {
     }
   }, [navigate])
 
+  const style = {
+    color: "orangered",
+    fontWeight: "bold",
+    fontSize: "20px"
+  }
+
   return (
     <div className='register-Login'>
-      <div className='registerPage'>
-        {/* <ToastContainer /> */}
+      {/* <div className='registerPage'>
         <section>
           <h1>Looks like you're new here!</h1>
         </section>
@@ -67,7 +72,29 @@ export default function Register() {
         </span>
         <button className='btnRegister' onClick={handleRegister}>Register</button>
         <p onClick={() => navigate('/user/login')}>Existing User? Login</p>
-      </div>
+      </div> */}
+
+      <form className='signUp' autocomplete="off">
+        <h2 className='header'>Create your new Account</h2> <br />
+
+        <div className='form-item'>
+          <input type="text" name='name' value={name} onChange={(e) => setName(e.target.value)} required /> <br />
+          <label>Name</label> <br />
+        </div>
+
+        <div className='form-item'>
+          <input type="text" name='mail' value={email} onChange={(e) => setEmail(e.target.value)} required />  <br />
+          <label>E-mail</label> <br />
+        </div>
+
+        <div className='form-item'>
+          <input type="password" name='pass' value={password} onChange={(e) => setPassword(e.target.value)} required />  <br />
+          <label>Password</label> <br />
+        </div>
+        <button className='btnRegister' onClick={handleRegister}>SIGN UP</button> <br/>
+        <p style={style} onClick={() => navigate('/user/login')}>Existing User? Login</p>
+      </form>
+
     </div>
   )
 }

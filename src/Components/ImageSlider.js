@@ -15,7 +15,7 @@ export default function ImageSlider() {
     return (
         // <div className='imageSlider'>
             <SimpleImageSlider
-                width={"100%"} height={450} images={images} 
+                width={"100%"} height={400} images={images} 
                 showBullets={true} showNavs={true}
                 slideDuration={0.5} autoPlay />
         // </div>
