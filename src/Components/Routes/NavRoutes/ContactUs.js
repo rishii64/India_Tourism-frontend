@@ -8,8 +8,8 @@ export default function ContactUs() {
           <ul>
             <li>
               Address
-              <p>Mada Center 8th floor, 379 Hudson</p>
-              <p>St. New York, NY 10018 US</p>
+              <p>16, A-6, Dda Market, Paschim Vihar</p>
+              <p>Delhi, New Delhi-110063, India</p>
             </li>
             <li>
               Let's Talk
