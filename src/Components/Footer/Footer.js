@@ -16,9 +16,9 @@ export default function Footer() {
                 <NavLink to='/blog'>Blog </NavLink>
                 <NavLink to='/rajasthan_tour'>Rajasthan Tour </NavLink>
             </div>
-            <section>
+            <div className='sectionHead'>
                 <div className="section_a">
-                    <h1>The India Tourism</h1>
+                    <h2>The India Tourism</h2>
                     <span><i className="fa-solid fa-envelope mail" /> : info@theindiatourism.com</span>
                     <p>
                         <span>
@@ -33,7 +33,7 @@ export default function Footer() {
                     <img className='banner' src={banner} alt='India-tour-footer' />
                     <span><i className="fa-regular fa-copyright fa-xs" /> The India Tourism</span>
                 </div>
-            </section>
+            </div>
         </footer>
     )
 }

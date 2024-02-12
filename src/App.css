@@ -15,8 +15,6 @@
     align-items: center;
     gap: 1em;
     padding: .2em 3em;
-    /* position: sticky;
-    top: 10vh; */
   }
   .logo {
     width: 21em;
@@ -27,14 +25,24 @@
   .callIcon {
     font-size: 1.8em;
   }
-
+  .headerRight{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .info_ph{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   .btnProfile{
     width: 2em;
-    height: 1.5em;
+    height: 1.6em;
     border: 1px solid grey;
     border-radius: 15%;
     font-size: 1.2em;
-    margin-left: 4em;
+    /* margin-left: 4em; */
   }
   .btnProfile:hover{cursor: pointer;}
 
@@ -159,41 +167,41 @@
     text-align: center;
   }
 
-  .homeTourHead,.homeTourPackages,.homeHolidayDestination,.styleTourPackages,.tourPackages,.placesToVisit,.toursOffers,.viewTourOffers {
+  .homeTourHead,.homeTourPackages,.homeHolidayDestination,.styleTourPackages,.tourPackages,.placesToVisit,.toursOffers,.viewTourOffers,.indiaTourism,.viewTourismState,.viewTourismState {
     width: 90%;
     margin: 3em auto;
   }
-  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.styleTourPackages p,.tourPackages p,.tourPlace p,.placesToVisit p,.toursOffers  p,.viewTourOffers p{
+  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.styleTourPackages p,.tourPackages p,.tourPlace p,.placesToVisit p,.toursOffers  p,.viewTourOffers p,.indiaTourism p,.viewTourismState p,.viewTourismState p{
     margin: 0 0 10px;
     text-align: justify;
     font-size: 15px;
     padding: 5px;
     line-height: 1.7;
   }
-  .homeTourHead b, .tourPackages b,.placesToVisit b,.toursOffers  b {
+  .homeTourHead b, .tourPackages b,.placesToVisit b,.toursOffers  b,.indiaTourism b {
     color: rgb(189, 9, 9);
   }
 
-  .idealTourPackage,.sectionTourpackages,.tourOffersCategory {
+  .idealTourPackage,.sectionTourpackages,.tourOffersCategory,.tourismPlaces,.viewTourismPlaces {
     margin: 2em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
   }
-  .tourPackage:hover,.sectionTourTypes:hover,.tourOffersOptions:hover {
+  .tourPackage:hover,.sectionTourTypes:hover,.tourOffersOptions:hover,.tourismStates:hover {
     cursor: pointer;
   }
-  .tourPackage img,.sectionTourTypes img,.packageItems img,.tourOffersOptions img{
+  .tourPackage img,.sectionTourTypes img,.packageItems img,.tourOffersOptions img,.tourismStates img,.viewTourismCategory img,.viewTourismCategory img{
     width: 16em;
     object-fit: contain;
   }
-  .tourPackage,.sectionTourTypes,.states,.tourOffersOptions {
+  .tourPackage,.sectionTourTypes,.states,.tourOffersOptions,.tourismStates,.viewTourismCategory {
     padding: .2em;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
-  .tourPackage p,.destinations p,.sectionTourTypes p,.styleTourPackageOptions p,.packageItems p,.tourOffersOptions p {
+  .tourPackage p,.destinations p,.sectionTourTypes p,.styleTourPackageOptions p,.packageItems p,.tourOffersOptions p,.tourismStates p,.viewTourismCategory p {
     padding: .5em 0;
     text-align: center;
   }
@@ -230,7 +238,7 @@
   .tourOptions img,.viewTourOptions img {
     width: 16.7em;
   }
-  .tourOptions p,.viewTourOptions p {
+  .tourOptions p,.viewTourOptions p{
     padding: 1em 0;
     text-align: center;
   }
@@ -243,7 +251,7 @@
 
 
   /* ------------------------- Tour-Packages Route ----------------------------> */
-  .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg{ 
+  .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg{ 
     width: 100%;
   }
   .styleTourPackageCategory,.packagesThemes,.viewTourcategory{
@@ -412,7 +420,7 @@
 
   /* ------------------------- Footer ----------------------------> */
   footer {
-    margin: 1em 0;
+    margin: 1em 0 0 0;
   }
   .links {
     background: rgba(0, 0, 0, 0.847);
@@ -432,7 +440,7 @@
   .links a:hover {
     color: rgb(255, 142, 142);
   }
-  section {
+  .sectionHead {
     margin: 0 2.5em;
     display: flex;
     justify-content: space-between;
@@ -444,7 +452,7 @@
     justify-content: center;
     gap: 5px;
   }
-  .section_a h1 {
+  .section_a h2 {
     color: rgb(207, 0, 0);
     font-weight: 500;
     font-family: 'Times New Roman', Times, serif;
@@ -454,19 +462,13 @@
   .mail {
     color: black;
   }
-  .fb,
-  .yt,
-  .twitter {
+  .fb,.yt,.twitter {
     color: black;
     margin-right: 5px;
   }
   .fb{  color: rgb(42, 95, 255);}
-  .twitter {
-    color: rgb(52, 197, 255);
-  }
-  .yt {
-    color: red;
-  }
+  .twitter {  color: rgb(52, 197, 255);}
+  .yt { color: red;}
   .section_b {
     display: flex;
     flex-direction: column;
@@ -474,38 +476,38 @@
     font-weight: 500;
     object-fit: contain;
   }
-  .section_b img {
-    width: 100%;
-  }
+  .section_b img {  width: 100%;}
   
   @media only screen and (max-width: 770px){
     .signUp,.loginPage{ width: 60%;}
-    .container{
-      width: 90%;
+    .container{ width: 90%;}
+    textarea{ width: 90%;}
+    .sectionHead{
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      gap: 5px;
+      background: rgb(231, 231, 231);
     }
-    textarea{
-      width: 90%;
+    .section_a,.section_b{
+      align-items: center;
     }
-  }
-
-  /* section{
-    flex-direction: column;
-    align-items: center;
-  } */
-  /* .section_a,.section_b{
-    flex-direction: column;
-    align-items: center;
-  } */
-  .section_b img {
-    width: 100%;
+    .section_b img {
+      width: 100%;
+    }
   }
 
   @media only screen and (max-width: 450px){
     header{
+      padding: .5em 1em 1em 1em;
       flex-direction: column-reverse;
+      align-items: flex-start;
     }
+    .logo{  width: 95%;}
     .headerRight{
-      text-align: end;
+      text-align: start;
+      width: 88%;
+      gap: 5px;
     }
 
     nav{
@@ -515,11 +517,13 @@
     .hamBurger{ 
       display: block;
       position: absolute;
-      top: 5vh;
+      top: 2rem;
       right: 4vw;
-      width: 2em;
-      height: 2em;
+      width: 2.5em;
+      height: 2.3em;
+      border: 1px solid rgb(205, 205, 205);
     }
+    .fa-bars{ color: green; font-size: 20px;}
     .hide{
       display: none;
     }

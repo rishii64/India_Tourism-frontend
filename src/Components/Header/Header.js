@@ -13,7 +13,9 @@ export default function Header(props) {
         <div className="headerRight">
           Email: info@theindiatourism.com
           <div className='info_ph'>
-            <i className="fa-solid fa-phone-volume callIcon" /> +91-9549279999
+            <span>
+              <i className="fa-solid fa-phone-volume callIcon" /> +91-9549279999
+            </span>
             <button className='btnProfile' onClick={() => navigate('/user/login')}><i className="fa-regular fa-user" /></button>
           </div>
         </div>
