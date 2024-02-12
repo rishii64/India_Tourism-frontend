@@ -46,7 +46,7 @@
     background: rgb(181, 39, 39);
     margin-top: .6em;
     flex-wrap: wrap;
-    transition: 0.3s ease-in-out;
+    /* transition: 0.3s ease-in-out; */
   }
   .hamBurger{ display:none }
   nav a {
@@ -498,7 +498,15 @@
     nav{
       flex-direction: column;
     }
-    .hamBurger{ display: block;}
+    nav a{  background: green;}
+    .hamBurger{ 
+      display: block;
+      position: absolute;
+      top: 5vh;
+      right: 4vw;
+      width: 2em;
+      height: 2em;
+    }
     .hide{
       display: none;
     }

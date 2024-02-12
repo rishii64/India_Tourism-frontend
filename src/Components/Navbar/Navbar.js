@@ -10,7 +10,9 @@ export default function Navbar() {
 
   return (
     <>
-      <button className='hamBurger' onClick={toggle}>Nav</button>
+      <button className='hamBurger' onClick={toggle}>
+        <i className="fa-solid fa-bars" />
+      </button>
       <nav className='navbar hide active'>
         <NavLink onClick={toggle} to='/'>HOME</NavLink>
         <NavLink onClick={toggle} to='/india_tourism'>INDIA TOURISM</NavLink>
