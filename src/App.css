@@ -478,7 +478,7 @@
     width: 100%;
   }
   
-  @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 770px){
     .signUp,.loginPage{ width: 60%;}
     .container{
       width: 90%;
@@ -488,14 +488,14 @@
     }
   }
 
-  section{
+  /* section{
     flex-direction: column;
     align-items: center;
-  }
-  .section_a,.section_b{
+  } */
+  /* .section_a,.section_b{
     flex-direction: column;
     align-items: center;
-  }
+  } */
   .section_b img {
     width: 100%;
   }
