@@ -157,41 +157,41 @@
     text-align: center;
   }
 
-  .homeTourHead,.homeTourPackages,.homeHolidayDestination,.styleTourPackages,.tourPackages,.placesToVisit {
+  .homeTourHead,.homeTourPackages,.homeHolidayDestination,.styleTourPackages,.tourPackages,.placesToVisit,.toursOffers,.viewTourOffers {
     width: 90%;
     margin: 3em auto;
   }
-  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.styleTourPackages p,.tourPackages p,.tourPlace p,.placesToVisit p {
+  .homeTourHead p,.homeTourPackages p,.homeHolidayDestination p,.styleTourPackages p,.tourPackages p,.tourPlace p,.placesToVisit p,.toursOffers  p,.viewTourOffers p{
     margin: 0 0 10px;
     text-align: justify;
     font-size: 15px;
     padding: 5px;
     line-height: 1.7;
   }
-  .homeTourHead b, .tourPackages b,.placesToVisit b {
+  .homeTourHead b, .tourPackages b,.placesToVisit b,.toursOffers  b {
     color: rgb(189, 9, 9);
   }
 
-  .idealTourPackage,.sectionTourpackages {
+  .idealTourPackage,.sectionTourpackages,.tourOffersCategory {
     margin: 2em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
   }
-  .tourPackage:hover,.sectionTourTypes:hover {
+  .tourPackage:hover,.sectionTourTypes:hover,.tourOffersOptions:hover {
     cursor: pointer;
   }
-  .tourPackage img,.sectionTourTypes img,.packageItems img{
+  .tourPackage img,.sectionTourTypes img,.packageItems img,.tourOffersOptions img{
     width: 16em;
     object-fit: contain;
   }
-  .tourPackage,.sectionTourTypes,.states {
+  .tourPackage,.sectionTourTypes,.states,.tourOffersOptions {
     padding: .2em;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
-  .tourPackage p,.destinations p,.sectionTourTypes p,.styleTourPackageOptions p,.packageItems p {
+  .tourPackage p,.destinations p,.sectionTourTypes p,.styleTourPackageOptions p,.packageItems p,.tourOffersOptions p {
     padding: .5em 0;
     text-align: center;
   }
@@ -225,10 +225,10 @@
     justify-content: space-around;
     gap: 1em;
   }
-  .tourOptions img {
+  .tourOptions img,.viewTourOptions img {
     width: 16.7em;
   }
-  .tourOptions p {
+  .tourOptions p,.viewTourOptions p {
     padding: 1em 0;
     text-align: center;
   }
@@ -244,7 +244,7 @@
   .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg{ 
     width: 100%;
   }
-  .styleTourPackageCategory,.packagesThemes{
+  .styleTourPackageCategory,.packagesThemes,.viewTourcategory{
     margin: 2em 0;
     display: flex;
     flex-wrap: wrap;
@@ -254,7 +254,7 @@
   .styleTourPackageOptions img{
     width: 17em;
   }
-  .styleTourPackageOptions{
+  .styleTourPackageOptions,.viewTourOptions{
     padding: .2em;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -298,20 +298,7 @@
     color: rgb(189, 9, 9);
   }
 
-
-  
-  
-  
-  
-  
-  
   /* ------------------------- Contact US ----------------------------> */
-  .contactUs{
-    /* background: url('https://img.freepik.com/premium-photo/tourism-with-white-background-high-quality-ultra-hd_889056-5521.jpg?size=626&ext=jpg&ga=GA1.1.390521900.1707301617&semt=sph') no-repeat;
-    background-size: fill;
-    background-position: center; */
-    /* height: 70vh; */
-  }
   .container{
     border: 1px solid;
     background: rgba(255, 255, 255, 0.671);

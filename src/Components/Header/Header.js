@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function Header() {
   const navigate = useNavigate()
+  
   return (
     <div>
       <header>
@@ -12,7 +13,7 @@ export default function Header() {
           Email: info@theindiatourism.com
           <div className='info_ph'>
             <i className="fa-solid fa-phone-volume callIcon" /> +91-9549279999
-            <button className='btnProfile' onClick={()=> navigate('/user/login')}><i className="fa-regular fa-user" /></button>
+            <button className='btnProfile' onClick={() => navigate('/user/login')}><i className="fa-regular fa-user" /></button>
           </div>
         </div>
       </header>

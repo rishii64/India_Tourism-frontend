@@ -22,6 +22,7 @@ import Footer from './Footer/Footer'
 
 import ViewtourPackages from './Routes/NavRoutes/ViewtourPackages'
 import ViewStyleTourPackages from './Routes/NavRoutes/ViewStyleTourPackages'
+import ViewTourOffers from './Routes/NavRoutes/ViewTourOffers'
 
 
 export default function HomeComp() {
@@ -33,13 +34,13 @@ export default function HomeComp() {
         <Route path='/user/register' element={<Register />} />
         <Route path='/user/login' element={<Login />} />
         <Route path='/' element={<Home />} />
-          <Route path='/tour-packages/:places' element={<ViewtourPackages/>} />
-          <Route path='/style-tour-packages/:styles' element={<ViewStyleTourPackages/>} />
-
+            <Route path='/tour-packages/:places' element={<ViewtourPackages/>} />
+            <Route path='/style-tour-packages/:styles' element={<ViewStyleTourPackages/>} />
         <Route path='/india_tourism' element={<IndiaTourism />} />
         <Route path='/tour_packages' element={<TourPackages />} />
         <Route path='/places_to_visit' element={<PlacesToVisit />} />
         <Route path='/tour_offers' element={<TourOffers />} />
+            <Route path='/tour-offers/:offers' element={<ViewTourOffers/>} />
         <Route path='/contact_us' element={<ContactUs />} />
 
         <Route path='/sitemap' element={<Sitemap />} />
