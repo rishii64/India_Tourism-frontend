@@ -26,21 +26,22 @@ import ViewTourOffers from './Routes/NavRoutes/ViewTourOffers'
 
 
 export default function HomeComp() {
+
   return (
     <div>
-      <Header/>
-      <Navbar/>
+      <Header />
+      <Navbar />
       <Routes>
         <Route path='/user/register' element={<Register />} />
         <Route path='/user/login' element={<Login />} />
         <Route path='/' element={<Home />} />
-            <Route path='/tour-packages/:places' element={<ViewtourPackages/>} />
-            <Route path='/style-tour-packages/:styles' element={<ViewStyleTourPackages/>} />
+        <Route path='/tour-packages/:places' element={<ViewtourPackages />} />
+        <Route path='/style-tour-packages/:styles' element={<ViewStyleTourPackages />} />
         <Route path='/india_tourism' element={<IndiaTourism />} />
         <Route path='/tour_packages' element={<TourPackages />} />
         <Route path='/places_to_visit' element={<PlacesToVisit />} />
         <Route path='/tour_offers' element={<TourOffers />} />
-            <Route path='/tour-offers/:offers' element={<ViewTourOffers/>} />
+        <Route path='/tour-offers/:offers' element={<ViewTourOffers />} />
         <Route path='/contact_us' element={<ContactUs />} />
 
         <Route path='/sitemap' element={<Sitemap />} />
@@ -51,7 +52,7 @@ export default function HomeComp() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/rajasthan_tour' element={<RajasthanTour />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   )
 }

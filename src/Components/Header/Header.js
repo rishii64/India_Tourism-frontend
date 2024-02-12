@@ -1,10 +1,11 @@
 import React from 'react'
 import logo from '../Images/logo.webp'
 import { useNavigate } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 
-export default function Header() {
+export default function Header(props) {
   const navigate = useNavigate()
-  
+
   return (
     <div>
       <header>
@@ -17,6 +18,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+
     </div>
   )
 }

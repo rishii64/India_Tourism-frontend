@@ -46,7 +46,9 @@
     background: rgb(181, 39, 39);
     margin-top: .6em;
     flex-wrap: wrap;
+    transition: 0.3s ease-in-out;
   }
+  .hamBurger{ display:none }
   nav a {
     text-decoration: none;
     border-right: 1px solid rgb(131, 31, 31);
@@ -491,6 +493,14 @@
     }
     .headerRight{
       text-align: end;
+    }
+
+    nav{
+      flex-direction: column;
+    }
+    .hamBurger{ display: block;}
+    .hide{
+      display: none;
     }
 
     .container{
