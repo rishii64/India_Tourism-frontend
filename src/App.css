@@ -479,12 +479,25 @@
   }
   
   @media only screen and (max-width: 768px){
+    .signUp,.loginPage{ width: 60%;}
     .container{
       width: 90%;
     }
     textarea{
       width: 90%;
     }
+  }
+
+  section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_a,.section_b{
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_b img {
+    width: 100%;
   }
 
   @media only screen and (max-width: 450px){
@@ -510,6 +523,8 @@
     .hide{
       display: none;
     }
+
+    .signUp,.loginPage{ width: 90%;}
 
     .container{
       flex-direction: column;
