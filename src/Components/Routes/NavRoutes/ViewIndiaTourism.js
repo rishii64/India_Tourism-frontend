@@ -11,10 +11,9 @@ export default function ViewIndiaTourism() {
                 setTourism(res.data)
             })
     }, [path])
-    // console.log(tourism[0]?.relatedPlace);
     return (
         <>
-            <img className='viewTourismImg' src='	https://www.theindiatourism.com/images/india-tourism.jpg' alt='' />
+            <img className='viewTourismImg' src='https://www.theindiatourism.com/images/india-tourism.jpg' alt='' />
             {
                 tourism.map((item, index) => {
                     return (
@@ -22,7 +21,8 @@ export default function ViewIndiaTourism() {
                             <h1>{item.title}</h1>   <hr /><br />
                             <p>{item.desc}</p>
 
-                            <br/><h1>{item.placeHead}</h1> <hr /><br />
+                            <br />
+                            <h1>{item.placeHead}</h1> <hr /><br />
                             <div className='viewTourismPlaces'>
                                 {
                                     tourism[0]?.relatedPlace.map((item, index) => {
