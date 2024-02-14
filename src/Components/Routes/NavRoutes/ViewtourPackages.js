@@ -10,7 +10,6 @@ export default function ViewtourPackages() {
             axios.get(`https://india-tourism-backend.onrender.com/tour-packages/${path}`)
                 .then(res => {
                     setPlace(res.data)
-                    // console.log(res.data)
                 })
         }
         catch (err) {
