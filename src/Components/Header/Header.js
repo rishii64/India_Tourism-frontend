@@ -7,7 +7,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 export default function Header(props) {
   const navigate = useNavigate()
   const auth = localStorage.getItem('Token:')
-  console.log(auth);
+  // console.log(auth);
   const { user } = useAuth0();
 
   const handleLogOut=()=>{
