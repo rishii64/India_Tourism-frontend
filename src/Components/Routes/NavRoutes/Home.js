@@ -11,11 +11,11 @@ export default function Home() {
 
   useEffect(() => {
     try {
-      axios.get('http://localhost:4343')
+      axios.get('https://india-tourism-backend.onrender.com')
         .then(res => {
           setData(res.data);
         })
-      axios.get('http://localhost:4343/homeStyleTourPackages')
+      axios.get('https://india-tourism-backend.onrender.com/homeStyleTourPackages')
         .then(res => {
           setData2(res.data)
         })

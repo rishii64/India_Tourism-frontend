@@ -7,7 +7,7 @@ export default function ViewtourPackages() {
     const path = useParams().places
     useEffect(() => {
         try {
-            axios.get(`http://localhost:4343/tour-packages/${path}`)
+            axios.get(`https://india-tourism-backend.onrender.com/tour-packages/${path}`)
                 .then(res => {
                     setPlace(res.data)
                     // console.log(res.data)

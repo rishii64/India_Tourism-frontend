@@ -17,7 +17,7 @@ export default function Login() {
 
   const handleLogin = () => {
     try {
-      axios.post(`http://localhost:4343/user/login`, { email, password })
+      axios.post(`https://india-tourism-backend.onrender.com/user/login`, { email, password })
         .then((res) => {
           if (res.data.msg === "User not registered") {
             toast.error("user is not registered !")

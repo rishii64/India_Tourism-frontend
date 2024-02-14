@@ -19,7 +19,7 @@ export default function Register() {
   const handleRegister = () => {
     const tempData = { name, email, password }
     try {
-      axios.post(`http://localhost:4343/user/register`, tempData)
+      axios.post(`https://india-tourism-backend.onrender.com/user/register`, tempData)
         .then((res) => {
           if (res.data.msg === 'This email is already in use !!') {
             toast.error('This email is already in use !!')

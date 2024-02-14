@@ -5,7 +5,7 @@ export default function PlacesToVisit() {
   const [states, setStates] = useState([])
   useEffect(() => {
     try {
-      axios.get('http://localhost:4343/placesToVisit')
+      axios.get('https://india-tourism-backend.onrender.com/placesToVisit')
         .then(res => {
           setStates(res.data)
         })

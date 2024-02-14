@@ -8,7 +8,7 @@ export default function ViewStyleTourPackages() {
 
     useEffect(() => {
         try {
-            axios.get(`http://localhost:4343/style-tour-packages/${path}`)
+            axios.get(`https://india-tourism-backend.onrender.com/style-tour-packages/${path}`)
                 .then(res => {
                     setPlace(res.data)
                 })
@@ -17,7 +17,7 @@ export default function ViewStyleTourPackages() {
             console.error('Error:', err)
         }
     }, [path])
-    // console.log(place);
+
     return (
         <>
             <img className='styleTourImg' src={place.poster} alt='' />

@@ -10,7 +10,7 @@ export default function TourOffers() {
   useEffect(() => {
     if (localStorage.getItem("Token:")) {
       try {
-        axios.get('http://localhost:4343/toursOffers')
+        axios.get('https://india-tourism-backend.onrender.com/toursOffers')
           .then(res => {
             setOffers(res.data)
           })

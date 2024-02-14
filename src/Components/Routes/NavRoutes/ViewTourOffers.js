@@ -8,7 +8,7 @@ export default function ViewTourOffers() {
 
   useEffect(() => {
     try {
-      axios.get(`http://localhost:4343/tour-offers/${path}`)
+      axios.get(`https://india-tourism-backend.onrender.com/tour-offers/${path}`)
         .then(res => {
           setOffers(res.data)
           // console.log(res.data);

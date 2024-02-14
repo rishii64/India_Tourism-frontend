@@ -8,7 +8,7 @@ export default function TourPackages() {
   useEffect(() => {
     if (localStorage.getItem("Token:")) {
       try {
-        axios.get('http://localhost:4343/tourPackagesThemes')
+        axios.get('https://india-tourism-backend.onrender.com/tourPackagesThemes')
           .then(res => {
             setThemes(res.data)
           })

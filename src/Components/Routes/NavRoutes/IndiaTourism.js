@@ -8,7 +8,7 @@ export default function IndiaTourism() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get('http://localhost:4343/indiaTourism')
+    axios.get('https://india-tourism-backend.onrender.com/indiaTourism')
       .then(res => {
         setData(res.data)
       })

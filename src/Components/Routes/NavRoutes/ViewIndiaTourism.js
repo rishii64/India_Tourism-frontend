@@ -6,7 +6,7 @@ export default function ViewIndiaTourism() {
     const [tourism, setTourism] = useState([])
     const path = useParams().states
     useEffect(() => {
-        axios.get(`http://localhost:4343/india-tourism/${path}`)
+        axios.get(`https://india-tourism-backend.onrender.com/india-tourism/${path}`)
             .then(res => {
                 setTourism(res.data)
             })

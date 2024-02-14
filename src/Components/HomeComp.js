@@ -11,13 +11,13 @@ import TourPackages from './Routes/NavRoutes/TourPackages'
 import PlacesToVisit from './Routes/NavRoutes/PlacesToVisit'
 import TourOffers from './Routes/NavRoutes/TourOffers'
 import ContactUs from './Routes/NavRoutes/ContactUs'
-import Sitemap from './Routes/FooterRoutes/Sitemap'
-import SitemapXML from './Routes/FooterRoutes/SitemapXML'
-import PaymentProcedure from './Routes/FooterRoutes/PaymentProcedure'
-import TermsNConditons from './Routes/FooterRoutes/TermsNConditons'
-import LinkExchange from './Routes/FooterRoutes/LinkExchange'
-import Blog from './Routes/FooterRoutes/Blog'
-import RajasthanTour from './Routes/FooterRoutes/RajasthanTour'
+// import Sitemap from './Routes/FooterRoutes/Sitemap'
+// import SitemapXML from './Routes/FooterRoutes/SitemapXML'
+// import PaymentProcedure from './Routes/FooterRoutes/PaymentProcedure'
+// import TermsNConditons from './Routes/FooterRoutes/TermsNConditons'
+// import LinkExchange from './Routes/FooterRoutes/LinkExchange'
+// import Blog from './Routes/FooterRoutes/Blog'
+// import RajasthanTour from './Routes/FooterRoutes/RajasthanTour'
 import Footer from './Footer/Footer'
 
 import ViewIndiaTourism from './Routes/NavRoutes/ViewIndiaTourism'
@@ -46,13 +46,13 @@ export default function HomeComp() {
             <Route path='/tour-offers/:offers' element={<ViewTourOffers />} />
         <Route path='/contact_us' element={<ContactUs />} />
 
-        <Route path='/sitemap' element={<Sitemap />} />
+        {/* <Route path='/sitemap' element={<Sitemap />} />
         <Route path='/sitemap_xml' element={<SitemapXML />} />
         <Route path='/payment_procedure' element={<PaymentProcedure />} />
         <Route path='/terms_n_conditions' element={<TermsNConditons />} />
         <Route path='/link_exchange' element={<LinkExchange />} />
         <Route path='/blog' element={<Blog />} />
-        <Route path='/rajasthan_tour' element={<RajasthanTour />} />
+        <Route path='/rajasthan_tour' element={<RajasthanTour />} /> */}
       </Routes>
       <Footer />
     </div>
