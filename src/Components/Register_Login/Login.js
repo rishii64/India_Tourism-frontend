@@ -1,16 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-// import { UserLogin } from '../Redux/Slice';
-// import { useDispatch } from "react-redux"
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const navigate = useNavigate();
-  // const dispatch = useDispatch();
 
   useEffect(() => {
     const token = localStorage.getItem('Token:')
@@ -23,35 +18,15 @@ export default function Login() {
     try {
       axios.post(`http://localhost:4343/user/login`, { email, password })
         .then((res) => {
-          console.log(res.data);
           if (res.data.msg === "User not registered") {
             alert(res.data.msg)
             navigate('/user/register')
           }
           else if (res.data.msg === 'Password is incorrect') {
-            // toast.error('Password is incorrect!!', {
-            //   position: "top-right",
-            //   autoClose: 2000,
-            //   hideProgressBar: false,
-            //   closeOnClick: true,
-            //   pauseOnHover: true,
-            //   draggable: true,
-            //   progress: undefined,
-            //   theme: "light",
-            // });
+            alert('incorrect password')
           }
           else {
-            // dispatch(UserLogin(res.data.userData));
-            // toast.success('Logged in Successfully!!', {
-            //   position: "top-right",
-            //   autoClose: 2000,
-            //   hideProgressBar: false,
-            //   closeOnClick: true,
-            //   pauseOnHover: true,
-            //   draggable: true,
-            //   progress: undefined,
-            //   theme: "light",
-            // });
+            alert('User logged in successfully')
             localStorage.setItem('Token:', res.data.token)
             navigate('/')
           }
