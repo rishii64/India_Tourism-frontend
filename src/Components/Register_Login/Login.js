@@ -27,7 +27,8 @@ export default function Login() {
           }
           else {
             alert('User logged in successfully')
-            localStorage.setItem('Token:', res.data.token)
+            localStorage.setItem('Token:', res.data.token);
+            localStorage.setItem('userName', res.data.userData.name);
             navigate('/')
           }
         })
