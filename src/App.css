@@ -9,7 +9,6 @@
 
   /* ------------------------- Header ----------------------------> */
   header {
-    /* border: 1px solid; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +25,6 @@
     font-size: 1.8em;
   }
   .headerRight{
-    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     gap: 3px;
@@ -42,7 +40,6 @@
     border: 1px solid grey;
     border-radius: 15%;
     font-size: 1.2em;
-    /* margin-left: 4em; */
   }
   .btnProfile:hover{cursor: pointer;}
 
@@ -80,14 +77,13 @@
   .loginPage {
     border-radius: 10px;
     width: 45vw;
-    /* height: 24em; */
     margin: 3em auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     font-family: roboto;
-    background: rgba(255, 255, 255, 0.671);
+    background: rgba(255, 255, 255, 0.725);
     backdrop-filter: blur(5px);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     padding: 3em;
@@ -247,9 +243,6 @@
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
 
-  /* ------------------------- India-Tourism Route ----------------------------> */
-
-
   /* ------------------------- Tour-Packages Route ----------------------------> */
   .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg{ 
     width: 100%;
@@ -320,7 +313,6 @@
     justify-content: space-between;
   }
   .sectionLeft{
-    /* border: 1px solid red; */
     width: 50%;
     background: url('https://img.freepik.com/free-photo/black-white-photo-modern-building_250224-279.jpg?size=626&ext=jpg&ga=GA1.1.390521900.1707301617&semt=ais') no-repeat;
     background-size: cover;
@@ -480,6 +472,7 @@
   
   @media only screen and (max-width: 770px){
     .signUp,.loginPage{ width: 60%;}
+    .form-item input {  width: 40vw;}
     .container{ width: 90%;}
     textarea{ width: 90%;}
     .sectionHead{
@@ -494,6 +487,9 @@
     }
     .section_b img {
       width: 100%;
+    }
+    .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg{ 
+      height: 16em;
     }
   }
 
@@ -529,6 +525,7 @@
     }
 
     .signUp,.loginPage{ width: 90%;}
+    .form-item input {  width: 65vw;}
 
     .container{
       flex-direction: column;
@@ -542,5 +539,9 @@
     }
     .sectionRight input{
       width: 90%
-    } ;
+    }
+    .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg{ 
+      height: 12em;
+      object-fit: cover;
+    }
   }

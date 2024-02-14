@@ -74,21 +74,21 @@ export default function Register() {
         <p onClick={() => navigate('/user/login')}>Existing User? Login</p>
       </div> */}
 
-      <form className='signUp' autocomplete="off">
+      <form className='signUp'>
         <h2 className='header'>Create your new Account</h2> <br />
 
         <div className='form-item'>
-          <input type="text" name='name' value={name} onChange={(e) => setName(e.target.value)} required /> <br />
+          <input type="text" name='name' value={name} onChange={(e) => setName(e.target.value)} autoComplete="off" required /> <br />
           <label>Name</label> <br />
         </div>
 
         <div className='form-item'>
-          <input type="text" name='mail' value={email} onChange={(e) => setEmail(e.target.value)} required />  <br />
+          <input type="text" name='mail' value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="off" required />  <br />
           <label>E-mail</label> <br />
         </div>
 
         <div className='form-item'>
-          <input type="password" name='pass' value={password} onChange={(e) => setPassword(e.target.value)} required />  <br />
+          <input type="password" name='pass' value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="off" required />  <br />
           <label>Password</label> <br />
         </div>
         <button className='btnRegister' onClick={handleRegister}>SIGN UP</button> <br/>
