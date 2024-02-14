@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -19,17 +20,21 @@ export default function Login() {
       axios.post(`http://localhost:4343/user/login`, { email, password })
         .then((res) => {
           if (res.data.msg === "User not registered") {
-            alert(res.data.msg)
-            navigate('/user/register')
+            toast.error("user is not registered !")
+            setTimeout(() => {
+              navigate('/user/register')
+            }, 2000);
           }
           else if (res.data.msg === 'Password is incorrect') {
-            alert('incorrect password')
+            toast.error('Incorrect password !')
           }
           else {
-            alert('User logged in successfully')
+            toast.success('successfully logged in !')
             localStorage.setItem('Token:', res.data.token);
             localStorage.setItem('userName', res.data.userData.name);
-            navigate('/')
+            setTimeout(() => {
+              navigate('/')
+            }, 2000);
           }
         })
     }
@@ -40,8 +45,8 @@ export default function Login() {
 
   return (
     <div className='register-Login'>
+      <Toaster position="top-center" reverseOrder={false} />
       <div className='loginPage'>
-        {/* <ToastContainer /> */}
         <section>
           <h1>Login Page</h1>
         </section>

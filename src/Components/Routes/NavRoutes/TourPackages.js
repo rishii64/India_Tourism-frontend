@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
 export default function TourPackages() {
-  const [themes, setThemes] = useState([])
+  const [themes, setThemes] = useState([]);
+  const navigate = useNavigate();
   useEffect(() => {
-    try {
-      axios.get('http://localhost:4343/tourPackagesThemes')
-        .then(res => {
-          setThemes(res.data)
-        })
+    if (localStorage.getItem("Token:")) {
+      try {
+        axios.get('http://localhost:4343/tourPackagesThemes')
+          .then(res => {
+            setThemes(res.data)
+          })
+      }
+      catch (err) {
+        console.error('Err:', err);
+      }
+    } else {
+      navigate("/user/login")
     }
-    catch (err) {
-      console.error('Err:', err);
-    }
-  }, [])
-  // console.log(themes);
+  }, [navigate]);
 
   return (
     <>
@@ -36,8 +41,6 @@ export default function TourPackages() {
           }
         </div>
       </div>
-
-
     </>
   )
 }

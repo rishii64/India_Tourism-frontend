@@ -1,25 +1,32 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import {useNavigate} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function TourOffers() {
   const [offers, setOffers] = useState([])
   const navigate = useNavigate()
 
   useEffect(() => {
-    try {
-      axios.get('http://localhost:4343/toursOffers')
-        .then(res => {
-          setOffers(res.data)
-        })
+    if (localStorage.getItem("Token:")) {
+      try {
+        axios.get('http://localhost:4343/toursOffers')
+          .then(res => {
+            setOffers(res.data)
+          })
+      }
+      catch (err) {
+        console.error("Error:", err)
+      }
+    } else {
+      toast.error('Access Denied. Login first !!')
+      navigate('/user/login');
     }
-    catch (err) {
-      console.error("Error:", err)
-    }
-  }, [])
-  
+  }, [navigate])
+
   return (
     <div>
+      <Toaster />
       <img className='indiaTourismImg' src='https://www.theindiatourism.com/images/the-india-tourism.jpg' alt='' />
 
       <div className="toursOffers">
