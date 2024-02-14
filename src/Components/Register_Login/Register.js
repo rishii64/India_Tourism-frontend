@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
 
 export default function Register() {
   const [name, setName] = useState('')
@@ -20,16 +18,7 @@ export default function Register() {
             navigate('/user/login')
           }
           else {
-            // toast('Success!!', {
-            //   position: "top-right",
-            //   autoClose: 2000,
-            //   hideProgressBar: false,
-            //   closeOnClick: true,
-            //   pauseOnHover: true,
-            //   draggable: true,
-            //   progress: undefined,
-            //   theme: "light",
-            // });
+            alert('Success')
             localStorage.setItem('Token:', res.data.token)
           }
         })
@@ -54,26 +43,6 @@ export default function Register() {
 
   return (
     <div className='register-Login'>
-      {/* <div className='registerPage'>
-        <section>
-          <h1>Looks like you're new here!</h1>
-        </section>
-        <span>
-          <label>Name: </label>
-          <input type='text' placeholder='enter name' value={name} onChange={(e) => setName(e.target.value)} /> <br /><br />
-        </span>
-        <span>
-          <label>E-mail: </label>
-          <input type='text' placeholder='enter e-mail' value={email} onChange={(e) => setEmail(e.target.value)} />  <br /><br />
-        </span>
-        <span>
-          <label>Password: </label>
-          <input type='password' placeholder='enter password' value={password} onChange={(e) => setPassword(e.target.value)} />  <br />
-        </span>
-        <button className='btnRegister' onClick={handleRegister}>Register</button>
-        <p onClick={() => navigate('/user/login')}>Existing User? Login</p>
-      </div> */}
-
       <form className='signUp'>
         <h2 className='header'>Create your new Account</h2> <br />
 
@@ -91,10 +60,34 @@ export default function Register() {
           <input type="password" name='pass' value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="off" required />  <br />
           <label>Password</label> <br />
         </div>
-        <button className='btnRegister' onClick={handleRegister}>SIGN UP</button> <br/>
+        <button className='btnRegister' onClick={handleRegister}>SIGN UP</button> <br />
         <p style={style} onClick={() => navigate('/user/login')}>Existing User? Login</p>
       </form>
+
 
     </div>
   )
 }
+
+<>
+  {/* <div className='registerPage'>
+    <section>
+      <h1>Looks like you're new here!</h1>
+    </section>
+    <span>
+      <label>Name: </label>
+      <input type='text' placeholder='enter name' value={name} onChange={(e) => setName(e.target.value)} /> <br /><br />
+    </span>
+    <span>
+      <label>E-mail: </label>
+      <input type='text' placeholder='enter e-mail' value={email} onChange={(e) => setEmail(e.target.value)} />  <br /><br />
+    </span>
+    <span>
+      <label>Password: </label>
+      <input type='password' placeholder='enter password' value={password} onChange={(e) => setPassword(e.target.value)} />  <br />
+    </span>
+    <button className='btnRegister' onClick={handleRegister}>Register</button>
+    <p onClick={() => navigate('/user/login')}>Existing User? Login</p>
+  </div> */}
+
+</>
