@@ -8,13 +8,13 @@ export default function Footer() {
         <footer>
             <div className='links'>
                 <NavLink to='/contact_us'>Contact Us</NavLink>
-                <NavLink to='/sitemap'>Sitemap </NavLink>
-                <NavLink to='/sitemap_xml'>Sitemap xml </NavLink>
-                <NavLink to='/payment_procedure'>Payment Procedure </NavLink>
-                <NavLink to='/terms_n_conditions'>Terms & Conditions </NavLink>
-                <NavLink to='/link_exchange'>Link Exchange </NavLink>
-                <NavLink to='/blog'>Blog </NavLink>
-                <NavLink to='/rajasthan_tour'>Rajasthan Tour </NavLink>
+                <NavLink to='#'>Sitemap </NavLink>
+                <NavLink to='#'>Sitemap xml </NavLink>
+                <NavLink to='#'>Payment Procedure </NavLink>
+                <NavLink to='#'>Terms & Conditions </NavLink>
+                <NavLink to='#'>Link Exchange </NavLink>
+                <NavLink to='#'>Blog </NavLink>
+                <NavLink to='#'>Rajasthan Tour </NavLink>
             </div>
             <div className='sectionHead'>
                 <div className="section_a">

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import ImageSlider from '../../ImageSlider'
+import ImageSlider from '../ImageSlider'
 import axios from 'axios'
 import { useParams, useNavigate } from 'react-router-dom'
 

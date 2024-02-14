@@ -5,25 +5,18 @@ import Navbar from './Navbar/Navbar'
 import { Routes, Route } from 'react-router-dom'
 import Register from './Register_Login/Register'
 import Login from './Register_Login/Login'
-import Home from './Routes/NavRoutes/Home'
-import IndiaTourism from './Routes/NavRoutes/IndiaTourism'
-import TourPackages from './Routes/NavRoutes/TourPackages'
-import PlacesToVisit from './Routes/NavRoutes/PlacesToVisit'
-import TourOffers from './Routes/NavRoutes/TourOffers'
-import ContactUs from './Routes/NavRoutes/ContactUs'
-// import Sitemap from './Routes/FooterRoutes/Sitemap'
-// import SitemapXML from './Routes/FooterRoutes/SitemapXML'
-// import PaymentProcedure from './Routes/FooterRoutes/PaymentProcedure'
-// import TermsNConditons from './Routes/FooterRoutes/TermsNConditons'
-// import LinkExchange from './Routes/FooterRoutes/LinkExchange'
-// import Blog from './Routes/FooterRoutes/Blog'
-// import RajasthanTour from './Routes/FooterRoutes/RajasthanTour'
+import Home from './Routes/Home'
+import IndiaTourism from './Routes/IndiaTourism'
+import TourPackages from './Routes/TourPackages'
+import PlacesToVisit from './Routes/PlacesToVisit'
+import TourOffers from './Routes/TourOffers'
+import ContactUs from './Routes/ContactUs'
 import Footer from './Footer/Footer'
 
-import ViewIndiaTourism from './Routes/NavRoutes/ViewIndiaTourism'
-import ViewtourPackages from './Routes/NavRoutes/ViewtourPackages'
-import ViewStyleTourPackages from './Routes/NavRoutes/ViewStyleTourPackages'
-import ViewTourOffers from './Routes/NavRoutes/ViewTourOffers'
+import ViewIndiaTourism from './Routes/ViewIndiaTourism'
+import ViewtourPackages from './Routes/ViewtourPackages'
+import ViewStyleTourPackages from './Routes/ViewStyleTourPackages'
+import ViewTourOffers from './Routes/ViewTourOffers'
 
 
 export default function HomeComp() {
@@ -45,14 +38,6 @@ export default function HomeComp() {
         <Route path='/tour_offers' element={<TourOffers />} />
             <Route path='/tour-offers/:offers' element={<ViewTourOffers />} />
         <Route path='/contact_us' element={<ContactUs />} />
-
-        {/* <Route path='/sitemap' element={<Sitemap />} />
-        <Route path='/sitemap_xml' element={<SitemapXML />} />
-        <Route path='/payment_procedure' element={<PaymentProcedure />} />
-        <Route path='/terms_n_conditions' element={<TermsNConditons />} />
-        <Route path='/link_exchange' element={<LinkExchange />} />
-        <Route path='/blog' element={<Blog />} />
-        <Route path='/rajasthan_tour' element={<RajasthanTour />} /> */}
       </Routes>
       <Footer />
     </div>
