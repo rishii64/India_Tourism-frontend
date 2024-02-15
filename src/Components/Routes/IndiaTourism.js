@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-import ImageSlider from '../ImageSlider'
+import ImageSlider2 from '../Slider/ImageSlider2'
 
 export default function IndiaTourism() {
   const [data, setData] = useState([])
@@ -15,7 +15,7 @@ export default function IndiaTourism() {
   }, [])
   return (
     <>
-      <ImageSlider />
+      <ImageSlider2 />
       {/* <img className='indiaTourismImg' src='https://www.theindiatourism.com/images/the-india-tourism.jpg' alt='' /> */}
       <div className='indiaTourism'>
         <h1>Tourism of India</h1> <hr /><br />
