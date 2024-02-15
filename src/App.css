@@ -15,27 +15,22 @@
     gap: 1em;
     padding: .2em 3em;
   }
-
   .logo {
     width: 21em;
   }
-
   .callIcon {
     font-size: 1.8em;
   }
-
   .headerRight {
     display: flex;
     flex-direction: column;
     gap: 3px;
   }
-
   .info_ph {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-
   .btnProfile {
     width: 2em;
     height: 1.6em;
@@ -53,7 +48,6 @@
     margin-top: .6em;
     flex-wrap: wrap;
   }
-
   .user {
     border: 1px solid;
     width: 2em;
@@ -63,11 +57,9 @@
     align-items: center;
     border-radius: 50%;
   }
-
   .hamBurger {
     display: none
   }
-
   nav a {
     text-decoration: none;
     border-right: 1px solid rgb(131, 31, 31);
@@ -75,7 +67,6 @@
     color: white;
     font-weight: 700;
   }
-
   nav a:hover {
     background: #ffffff;
     color: rgb(181, 39, 39);
@@ -89,7 +80,6 @@
     background-size: cover;
     background-position: center;
   }
-
   .loginPage {
     border-radius: 10px;
     width: 45vw;
@@ -105,25 +95,19 @@
     padding: 3em;
     gap: 1em;
   }
-
   .loginPage input {
     height: 2em;
     padding-left: 1em;
   }
-
   .loginPage p {
     font-weight: 600;
     color: orangered;
   }
-
-  .loginPage p:hover,
-  .signUp p:hover {
+  .loginPage p:hover,.signUp p:hover {
     scale: 1.1;
     transition: 500ms;
   }
-
-  .btnRegister,
-  .btnLogin {
+  .btnRegister,.btnLogin {
     width: 8em;
     height: 2.3em;
     border: none;
@@ -132,7 +116,6 @@
     background: rgb(255, 193, 78);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
-
   .signUp {
     background: rgba(255, 255, 255, 0.951);
     border-radius: 10px;
@@ -145,15 +128,12 @@
     padding: 2.5em;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
-
   .form-item {
     position: relative;
   }
-
   input:focus {
     outline: none;
   }
-
   .form-item input {
     width: 25vw;
     height: 35px;
@@ -164,7 +144,6 @@
     border-bottom: 1px solid grey;
     background: rgba(255, 255, 255, 0.911);
   }
-
   .form-item label {
     position: absolute;
     top: 8px;
@@ -174,200 +153,114 @@
     background: rgba(255, 255, 255, 0.94);
     transition: .3s;
   }
-
-  .form-item input:valid~label,
-  .form-item input:focus~label {
+  .form-item input:valid~label,.form-item input:focus~label {
     color: blue;
     transform: translateY(-17px);
     font-size: 13px;
   }
 
   /* ------------------------- Home Route ----------------------------> */
-  h1,
-  h2 {
+  h1,h2 {
     text-align: center;
   }
-
-  .homeTourHead,
-  .homeTourPackages,
-  .homeHolidayDestination,
-  .styleTourPackages,
-  .tourPackages,
-  .placesToVisit,
-  .toursOffers,
-  .viewTourOffers,
-  .indiaTourism,
-  .viewTourismState,
-  .viewTourismState {
+  .homeTourHead,.homeTourPackages,.homeHolidayDestination,.styleTourPackages, .tourPackages,
+  .placesToVisit,.toursOffers, .viewTourOffers,.indiaTourism,.viewTourismState,.viewTourismState {
     width: 90%;
     margin: 3em auto;
   }
-
-  .homeTourHead p,
-  .homeTourPackages p,
-  .homeHolidayDestination p,
-  .styleTourPackages p,
-  .tourPackages p,
-  .tourPlace p,
-  .placesToVisit p,
-  .toursOffers p,
-  .viewTourOffers p,
-  .indiaTourism p,
-  .viewTourismState p,
-  .viewTourismState p {
+  .homeTourHead p,.homeTourPackages p, .homeHolidayDestination p,  .styleTourPackages p, .tourPackages p,
+  .tourPlace p, .placesToVisit p,.toursOffers p, .viewTourOffers p,.indiaTourism p,.viewTourismState p, .viewTourismState p {
     margin: 0 0 10px;
     text-align: justify;
     font-size: 15px;
     padding: 5px;
     line-height: 1.7;
   }
-
-  .homeTourHead b,
-  .tourPackages b,
-  .placesToVisit b,
-  .toursOffers b,
-  .indiaTourism b {
+  .homeTourHead b, .tourPackages b, .placesToVisit b, .toursOffers b, .indiaTourism b {
     color: rgb(189, 9, 9);
   }
-
-  .idealTourPackage,
-  .sectionTourpackages,
-  .tourOffersCategory,
-  .tourismPlaces,
-  .viewTourismPlaces {
+  .idealTourPackage,  .sectionTourpackages, .tourOffersCategory, .tourismPlaces, .viewTourismPlaces {
     margin: 2em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
   }
-
-  .logo:hover,
-  .user:hover,
-  .btnProfile:hover,
-  .loginPage p:hover,
-  .signUp p:hover,
-  .btnLogin:hover,
-  .btnRegister:hover,
-  .tourPackage:hover,
-  .sectionTourTypes:hover,
-  .tourOffersOptions:hover,
-  .tourismStates:hover {
+  .logo:hover, .user:hover, .btnProfile:hover, .loginPage p:hover, .signUp p:hover,.btnLogin:hover,
+  .btnRegister:hover, .tourPackage:hover, .sectionTourTypes:hover, .tourOffersOptions:hover,.tourismStates:hover {
     cursor: pointer;
   }
-
-  .tourPackage img,
-  .sectionTourTypes img,
-  .packageItems img,
-  .tourOffersOptions img,
-  .tourismStates img,
-  .viewTourismCategory img,
-  .viewTourismCategory img {
+  .tourPackage img, .sectionTourTypes img, .packageItems img, .tourOffersOptions img, .tourismStates img,
+  .viewTourismCategory img, .viewTourismCategory img {
     width: 16em;
     object-fit: contain;
   }
-
-  .tourPackage,
-  .sectionTourTypes,
-  .states,
-  .tourOffersOptions,
-  .tourismStates,
-  .viewTourismCategory {
+  .tourPackage, .sectionTourTypes,.states, .tourOffersOptions, .tourismStates,.viewTourismCategory {
     padding: .2em;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
-
-  .tourPackage p,
-  .destinations p,
-  .sectionTourTypes p,
-  .styleTourPackageOptions p,
-  .packageItems p,
-  .tourOffersOptions p,
-  .tourismStates p,
-  .viewTourismCategory p {
+  .tourPackage p, .destinations p, .sectionTourTypes p, .styleTourPackageOptions p, .packageItems p,
+  .tourOffersOptions p, .tourismStates p, .viewTourismCategory p {
     padding: .5em 0;
     text-align: center;
   }
-
   .holidayDestinations {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: .6em;
   }
-
-  .destinations,
-  .packageItems {
+  .destinations, .packageItems {
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     padding: .2em;
   }
-
   .destinations img {
     width: 11em;
   }
-
-  .destinations h4,
-  .styleTourPackageOptions h4 {
+  .destinations h4, .styleTourPackageOptions h4 {
     border-bottom: 1px dashed grey;
     padding: .5em 0;
   }
 
   /* Ideal Tour Packages: Dynamic Page ----------------------------> */
-  .tourPlace,
-  .tourOptions {
+  .tourPlace,.tourOptions {
     margin: 3em;
   }
-
   .tourOptions {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
   }
-
-  .tourOptions img,
-  .viewTourOptions img {
+  .tourOptions img,.viewTourOptions img {
     width: 16.7em;
   }
-
-  .tourOptions p,
-  .viewTourOptions p {
+  .tourOptions p,.viewTourOptions p {
     padding: 1em 0;
     text-align: center;
   }
-
   .tourCategory {
     padding: .2em;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   }
 
   /* ------------------------- Tour-Packages Route ----------------------------> */
-  .indiaTourismImg,
-  .tourPackagesImg,
-  .styleTourImg,
-  .placesToVisitImg,
-  .viewTourismImg {
+  .indiaTourismImg, .tourPackagesImg, .styleTourImg, .placesToVisitImg, .viewTourismImg {
     width: 100%;
   }
-
-  .styleTourPackageCategory,
-  .packagesThemes,
-  .viewTourcategory {
+  .styleTourPackageCategory,.packagesThemes, .viewTourcategory {
     margin: 2em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
   }
-
   .styleTourPackageOptions img {
     width: 17em;
   }
-
-  .styleTourPackageOptions,
-  .viewTourOptions {
+  .styleTourPackageOptions, .viewTourOptions {
     padding: .2em;
     text-align: center;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -381,36 +274,29 @@
     justify-content: space-around;
     gap: .5em;
   }
-
   .states {
     background: rgb(238, 238, 238);
   }
-
   .states h4 {
     background: rgb(189, 9, 9);
     color: white;
     padding: .5em 0;
   }
-
   .states img {
     width: 17em;
     height: 8em;
   }
-
   .states li {
     text-align: left;
     padding: 5px;
     border-bottom: 1px dashed rgb(173, 173, 173);
   }
-
   .states li::marker {
     content: ">";
   }
-
   .div {
     margin-left: 1em;
   }
-
   .states p {
     background-color: #DFDADA;
     font-weight: 600;
@@ -429,37 +315,30 @@
     display: flex;
     justify-content: space-between;
   }
-
   .sectionLeft {
     width: 50%;
     background: url('https://img.freepik.com/free-photo/black-white-photo-modern-building_250224-279.jpg?size=626&ext=jpg&ga=GA1.1.390521900.1707301617&semt=ais') no-repeat;
     background-size: cover;
     color: rgba(255, 255, 255, 0.777);
   }
-
   .sectionLeft ul {
     margin: 20% 4em;
   }
-
   .sectionLeft li {
     margin: 2em 0;
   }
-
   .sectionRight {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-
   .sectionRight label {
     font-size: 15px;
   }
-
   .sectionRight textarea {
     padding: 1em 0 0 1em;
   }
-
   .btnSend {
     position: relative;
     border: none;
@@ -471,7 +350,6 @@
     user-select: none;
     touch-action: manipulation;
   }
-
   .shadow {
     position: absolute;
     top: 0;
@@ -484,7 +362,6 @@
     transform: translateY(2px);
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
   }
-
   .edge {
     position: absolute;
     top: 0;
@@ -498,7 +375,6 @@
         hsl(340deg 100% 32%) 92%,
         hsl(340deg 100% 16%) 100%);
   }
-
   .front {
     display: block;
     position: relative;
@@ -511,31 +387,25 @@
     transform: translateY(-4px);
     transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
   }
-
   .btnSend:hover {
     filter: brightness(110%);
   }
-
   .btnSend:hover .front {
     transform: translateY(-6px);
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
   }
-
   .btnSend:active .front {
     transform: translateY(-2px);
     transition: transform 34ms;
   }
-
   .btnSend:hover .shadow {
     transform: translateY(4px);
     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
   }
-
   .btnSend:active .shadow {
     transform: translateY(1px);
     transition: transform 34ms;
   }
-
   .btnSend:focus:not(:focus-visible) {
     outline: none;
   }
@@ -544,7 +414,6 @@
   footer {
     margin: 1em 0 0 0;
   }
-
   .links {
     background: rgba(0, 0, 0, 0.847);
     display: flex;
@@ -552,7 +421,6 @@
     flex-wrap: wrap;
     padding: .1em 1em;
   }
-
   .links a {
     border-right: 1px solid white;
     text-decoration: none;
@@ -561,17 +429,14 @@
     margin: .6em 0;
     font-weight: 600;
   }
-
   .links a:hover {
     color: rgb(255, 142, 142);
   }
-
   .sectionHead {
     margin: 0 2.5em;
     display: flex;
     justify-content: space-between;
   }
-
   .section_a {
     width: 20em;
     display: flex;
@@ -579,7 +444,6 @@
     justify-content: center;
     gap: 5px;
   }
-
   .section_a h2 {
     color: rgb(207, 0, 0);
     font-weight: 500;
@@ -587,30 +451,16 @@
     display: flex;
     align-items: flex-end;
   }
-
   .mail {
     color: black;
   }
-
-  .fb,
-  .yt,
-  .twitter {
+  .fb, .yt, .twitter {
     color: black;
     margin-right: 5px;
   }
-
-  .fb {
-    color: rgb(42, 95, 255);
-  }
-
-  .twitter {
-    color: rgb(52, 197, 255);
-  }
-
-  .yt {
-    color: red;
-  }
-
+  .fb { color: rgb(42, 95, 255); }
+  .twitter { color: rgb(52, 197, 255); }
+  .yt { color: red; }
   .section_b {
     display: flex;
     flex-direction: column;
@@ -618,30 +468,21 @@
     font-weight: 500;
     object-fit: contain;
   }
-
-  .section_b img {
-    width: 100%;
-  }
+  .section_b img { width: 100%; }
 
   @media only screen and (max-width: 770px) {
-
-    .signUp,
-    .loginPage {
+    .signUp,.loginPage {
       width: 60%;
     }
-
     .form-item input {
       width: 40vw;
     }
-
     .container {
       width: 90%;
     }
-
     textarea {
       width: 90%;
     }
-
     .sectionHead {
       flex-direction: column;
       align-items: center;
@@ -649,21 +490,13 @@
       gap: 5px;
       background: rgb(231, 231, 231);
     }
-
-    .section_a,
-    .section_b {
+    .section_a, .section_b {
       align-items: center;
     }
-
     .section_b img {
       width: 100%;
     }
-
-    .indiaTourismImg,
-    .tourPackagesImg,
-    .styleTourImg,
-    .placesToVisitImg,
-    .viewTourismImg {
+    .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg {
       height: 16em;
     }
   }
@@ -674,25 +507,20 @@
       flex-direction: column-reverse;
       align-items: flex-start;
     }
-
     .logo {
       width: 95%;
     }
-
     .headerRight {
       text-align: start;
       width: 88%;
       gap: 5px;
     }
-
     nav {
       flex-direction: column;
     }
-
     nav a {
       background: green;
     }
-
     .hamBurger {
       display: block;
       position: absolute;
@@ -702,48 +530,33 @@
       height: 2.3em;
       border: 1px solid rgb(205, 205, 205);
     }
-
     .fa-bars {
       color: green;
       font-size: 20px;
     }
-
     .hide {
       display: none;
     }
-
-    .signUp,
-    .loginPage {
+    .signUp,.loginPage {
       width: 90%;
     }
-
     .form-item input {
       width: 65vw;
     }
-
     .container {
       flex-direction: column;
       height: auto;
     }
-
-    .sectionLeft,
-    .sectionRight {
+    .sectionLeft,.sectionRight {
       width: 100%;
     }
-
     .sectionRight form {
       padding: 1.5em;
     }
-
     .sectionRight input {
       width: 90%
     }
-
-    .indiaTourismImg,
-    .tourPackagesImg,
-    .styleTourImg,
-    .placesToVisitImg,
-    .viewTourismImg {
+    .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg {
       height: 12em;
       object-fit: cover;
     }
