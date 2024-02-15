@@ -547,6 +547,12 @@
       flex-direction: column;
       height: auto;
     }
+    .tourPackage img, .sectionTourTypes img, .packageItems img, .tourOffersOptions img, .tourismStates img, .viewTourismCategory img, .viewTourismCategory img, .tourOptions img, .viewTourOptions img {
+      width: 90vw;
+    }
+    .tourPlace,.tourOptions {
+      margin: 1em;
+    }
     .sectionLeft,.sectionRight {
       width: 100%;
     }
@@ -559,5 +565,12 @@
     .indiaTourismImg,.tourPackagesImg,.styleTourImg,.placesToVisitImg,.viewTourismImg {
       height: 12em;
       object-fit: cover;
+    }
+  }
+
+  @media only screen and (max-width:630px) {
+    .destinations img,.styleTourPackageOptions img { 
+      width: 85vw; 
+      object-fit: contain;
     }
   }
