@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import toast, { Toaster } from 'react-hot-toast';
 
 export default function TourPackages() {
   const [themes, setThemes] = useState([]);
   const navigate = useNavigate();
+
   useEffect(() => {
     if (localStorage.getItem("Token:")) {
       try {
@@ -17,12 +19,14 @@ export default function TourPackages() {
         console.error('Err:', err);
       }
     } else {
+      toast.error('Access Denied. Login first !!')
       navigate("/user/login")
     }
   }, [navigate]);
 
   return (
     <>
+      <Toaster />
       <img className='tourPackagesImg' src='https://www.theindiatourism.com/images/india-tourism.jpg' alt='' />
       <div className='tourPackages'>
         <h1>India Packages by Themes</h1> <hr /> <br />
