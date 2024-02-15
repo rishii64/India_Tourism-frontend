@@ -668,7 +668,7 @@
     }
   }
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 650px) {
     header {
       padding: .5em 1em 1em 1em;
       flex-direction: column-reverse;

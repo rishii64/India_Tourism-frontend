@@ -16,11 +16,13 @@ export default function Register() {
     }
   }, [navigate])
 
-  const handleRegister = () => {
+  const handleRegister = (e) => {
+    e.preventDefault()
     const tempData = { name, email, password }
     try {
       axios.post(`https://india-tourism-backend.onrender.com/user/register`, tempData)
         .then((res) => {
+          console.log(res);
           if (res.data.msg === 'This email is already in use !!') {
             toast.error('This email is already in use !!')
             setTimeout(() => {
@@ -29,8 +31,9 @@ export default function Register() {
           }
           else {
             toast.success('Registered !!')
+            localStorage.setItem('Token:', res.data.token);
+            localStorage.setItem('userName', res.data.insertData.name);
             setTimeout(() => {
-              localStorage.setItem('Token:', res.data.token)
               navigate('/')
             }, 2000);
           }
