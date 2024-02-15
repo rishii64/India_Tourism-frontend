@@ -3,17 +3,17 @@ import logo from '../Images/logo.webp'
 import { useNavigate } from 'react-router-dom'
 import toast, { Toaster } from 'react-hot-toast';
 
-export default function Header(props) {
+export default function Header() {
   const navigate = useNavigate()
   const auth = localStorage.getItem('Token:')
   const user = localStorage.getItem('userName')
 
   const handleLogOut = () => {
-      toast.success('User Logged Out !!')
-      setTimeout(() => {
-        localStorage.clear()
-        navigate('/user/login')
-      }, 2000)
+    toast.success('User Logged Out !!')
+    setTimeout(() => {
+      localStorage.clear()
+      navigate('/user/login')
+    }, 2000)
   }
 
   return (
@@ -28,7 +28,12 @@ export default function Header(props) {
               <i className="fa-solid fa-phone-volume callIcon" /> +91-9549279999
             </span>
             {
-              auth ? <p title='Logout' className='user' onClick={handleLogOut}>{user[0].toUpperCase()}</p> : <button title='Login' className='btnProfile' onClick={() => navigate('/user/login')}><i className="fa-regular fa-user" /></button>
+              auth ?
+                <div className='userInfo'>
+                  <p title='Logout' className='user'>{user[0].toUpperCase()}</p>
+                  <i className="fa-solid fa-right-to-bracket logout" onClick={handleLogOut} />
+                </div>
+                : <button title='Login' className='btnProfile' onClick={() => navigate('/user/login')}><i className="fa-regular fa-user" /></button>
             }
           </div>
         </div>

@@ -38,6 +38,23 @@
     border-radius: 15%;
     font-size: 1.2em;
   }
+  .user {
+    border: 1px solid;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+  }
+  .userInfo{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+  }
+  .logout{
+    font-size: 1.7em;
+  }
 
   /* ------------------------- Navbar ----------------------------> */
   nav {
@@ -48,15 +65,7 @@
     margin-top: .6em;
     flex-wrap: wrap;
   }
-  .user {
-    border: 1px solid;
-    width: 2em;
-    height: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-  }
+  
   .hamBurger {
     display: none
   }
