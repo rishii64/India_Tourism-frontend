@@ -195,7 +195,7 @@
     justify-content: space-around;
     gap: 1em;
   }
-  .logo:hover, .user:hover, .btnProfile:hover, .loginPage p:hover, .signUp p:hover,.btnLogin:hover,
+  .logo:hover, .logout:hover, .btnProfile:hover, .loginPage p:hover, .signUp p:hover,.btnLogin:hover,
   .btnRegister:hover, .tourPackage:hover, .sectionTourTypes:hover, .tourOffersOptions:hover,.tourismStates:hover {
     cursor: pointer;
   }
