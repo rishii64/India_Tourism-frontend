@@ -31,7 +31,7 @@ export default function Header() {
               auth ?
                 <div className='userInfo'>
                   <p title='user' className='user'>{user[0].toUpperCase()}</p>
-                  <i title='Logout' className="fa-solid fa-right-to-bracket logout" onClick={handleLogOut} />
+                  <i title='Logout' className="fa-solid fa-arrow-right-to-bracket logout" onClick={handleLogOut} />
                 </div>
                 : <button title='Login' className='btnProfile' onClick={() => navigate('/user/login')}><i className="fa-regular fa-user" /></button>
             }
